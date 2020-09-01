@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+
+/* html {
+    scroll-behavior: smooth;
+    transition-duration: .9s;
+} */
+
+body{
+    margin: 0;
+    color: #ecf0f1;
+    font-family: consolas;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+nav a{
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+nav a:hover{
+    background : yellow;
+    color : #333;
+}
+
+nav a.active{
+    background : yellow;
+}
+
+#main-menu{
+    position: fixed;
+    text-align: center;
+}
+
+p{
+    width : 40%;    
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+}
+
+section{
+    width : 100%;
+    margin: 0;
+    padding: 100px;
+}
+
+#section1{
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;    
+    background-attachment: fixed;
+}
+#section2{
+    background-image: url(images/1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    
+    background-attachment: fixed;
+}
+#section3{
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+#section4{
+    background-image: url(images/4.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+#section5{
+    background-image: url(images/5.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}

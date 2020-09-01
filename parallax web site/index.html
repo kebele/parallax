@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paral 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="main-menu">
+        <ul>
+            <li><a class="obss-scroller" href="#section1">home</a></li>
+            <li><a class="obss-scroller" href="#section2">gallery</a></li>
+            <li><a class="obss-scroller" href="#section3">about us</a></li>
+            <li><a class="obss-scroller" href="#section4">testimonials</a></li>
+            <li><a class="obss-scroller" href="#section5">our team</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <h1>smooth scroll</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo, accusamus nulla error recusandae animi vel exercitationem iusto esse debitis necessitatibus laborum eius, in voluptas, optio velit consectetur possimus cum quibusdam ipsa veniam. Vitae corporis beatae quibusdam a dolorum rerum aliquam natus ullam exercitationem deleniti alias veritatis, laudantium ipsam nostrum!</p>
+    </section>
+
+    <section id="section2">
+        <h1>new design</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo, accusamus nulla error recusandae animi vel exercitationem iusto esse debitis necessitatibus laborum eius, in voluptas, optio velit consectetur possimus cum quibusdam ipsa veniam. Vitae corporis beatae quibusdam a dolorum rerum aliquam natus ullam exercitationem deleniti alias veritatis, laudantium ipsam nostrum!</p>
+    </section>
+
+    <section id="section3">
+        <h1>more faster</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo, accusamus nulla error recusandae animi vel exercitationem iusto esse debitis necessitatibus laborum eius, in voluptas, optio velit consectetur possimus cum quibusdam ipsa veniam. Vitae corporis beatae quibusdam a dolorum rerum aliquam natus ullam exercitationem deleniti alias veritatis, laudantium ipsam nostrum!</p>
+    </section>
+
+    <section id="section4">
+        <h1>very easy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo, accusamus nulla error recusandae animi vel exercitationem iusto esse debitis necessitatibus laborum eius, in voluptas, optio velit consectetur possimus cum quibusdam ipsa veniam. Vitae corporis beatae quibusdam a dolorum rerum aliquam natus ullam exercitationem deleniti alias veritatis, laudantium ipsam nostrum!</p>
+    </section>
+
+    <section id="section5">
+        <h1>make the things working</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed explicabo, accusamus nulla error recusandae animi vel exercitationem iusto esse debitis necessitatibus laborum eius, in voluptas, optio velit consectetur possimus cum quibusdam ipsa veniam. Vitae corporis beatae quibusdam a dolorum rerum aliquam natus ullam exercitationem deleniti alias veritatis, laudantium ipsam nostrum!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia reprehenderit obcaecati a tenetur dolore minus veniam, veritatis, fugit consectetur, laborum quaerat eaque accusantium culpa temporibus voluptatum sequi commodi quia et modi eius aperiam? Consequatur iusto fugit ipsum qui, officia nobis laudantium cumque nesciunt libero repellendus, minima magni. Ipsa, obcaecati quaerat?</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function(){
+    $("section").height($(window).height());
+    onWindowRezise();
+
+    $(".obss-scroller").smoothScroller({
+        duration : 1000,
+        activeClass: "active"
+    })
+})
+
+let onWindowRezise = function(){
+    $(window).resize(function(evt){
+        $("section").height($(window).height())
+    })
+}
+
+    </script>
+    <script src="smooth-scroller.js"></script>
+</body>
+</html>
